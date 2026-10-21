@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Szókezelő</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <script src="../javascript/szokezelo.js" defer></script>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-center">Szókezelő</h1>
+            <a href="/" class="btn btn-secondary mt-3">Vissza a főoldalra</a>
+
+            <div class="card p-4 mt-4">
+                <label for="ujSzo">Új szó</label>
+                <input type="text" id="ujSzo" class="form-control mt-2" />
+                <button id="hozzaad" class="btn btn-primary mt-3">Szó hozzáadása</button>
+                <p id="uzenet" class="mt-3"></p>
+            </div>
+
+            <h2 class="mt-4">Szavak listája</h2>
+            <ul id="szavak" class="list-group mt-3"></ul>
+        </div>
+    </body>
+</html>

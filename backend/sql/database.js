@@ -10,13 +10,11 @@ const pool = mysql.createPool({
     queueLimit: 0
 });
 
-//!SQL Queries
 async function selectall() {
     const query = 'SELECT * FROM exampletable;';
     const [rows] = await pool.execute(query);
     return rows;
 }
-//!Export
 module.exports = {
     selectall
 };

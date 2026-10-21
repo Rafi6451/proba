@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Akasztófa játék</title>
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <script src="../javascript/akasztofa.js" defer></script>
+    </head>
+    <body>
+        <div class="container text-center mt-5">
+            <h1>Akasztófa játék</h1>
+            <a href="/" class="btn btn-secondary mt-3">Vissza a főoldalra</a>
+
+            <div class="card p-4 mt-4">
+                <button id="ujJatek" class="btn btn-primary">Új játék</button>
+                <h2 id="szo" class="mt-4">_ _ _ _</h2>
+                <p id="hibak">Hibák: 0 / 6</p>
+                <input
+                    type="text"
+                    id="betu"
+                    class="form-control"
+                    maxlength="1"
+                    placeholder="Egy betű"
+                />
+                <button id="tipp" class="btn btn-success mt-3">Tippelés</button>
+                <p id="uzenet" class="mt-3"></p>
+            </div>
+        </div>
+    </body>
+</html>
